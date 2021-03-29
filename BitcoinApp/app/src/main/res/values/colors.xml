@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#455A64</color>
+    <color name="colorBackground">#37474F</color>
+    <color name="colorTextColor">#ECEFF1</color>
+    <color name="colorTextButton">#B0BEC5</color>
+    <color name="colora">#37474F</color>
+    <color name="colorb">#455A64</color>
+    <color name="colorLinea">#546E7A</color>
+    <color name="colorLineb">#37474F</color>
+    <color name="colorTexta">#546E7A</color>
+    <color name="colorTextb">#37474F</color>
+
+
+
+</resources>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    tools:context="com.sense.bitcoinapp.MainActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:background="@color/colora"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btcturksimage"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/logo"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            />
+
+        <TextView
+            android:id="@+id/btcturk"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@id/btcturksimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/colorTextColor"
+            android:textSize="25sp"
+            android:typeface="monospace"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/colorLinea" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/txtLow"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:lines="2"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="En Düşük Fiyat"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorTexta"
+
+            />
+
+        <TextView
+            android:id="@+id/txtHighBtcturk"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:padding="5dp"
+            android:text="En Yüksek Fiyat"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/txtLow"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorTexta"
+
+            />
+        <TextView
+            android:id="@+id/txtvolume"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/txtLow"
+            android:text="Hacim"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorTexta"
+
+            />
+    </RelativeLayout>
+</LinearLayout>
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/colorb"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/paribuimage"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/paribu" />
+
+        <TextView
+            android:id="@+id/paribu"
+            android:gravity="center"
+            android:layout_marginLeft="25dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/paribuimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/colorTextColor"
+            android:textSize="25sp"
+            android:typeface="monospace"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/colorLineb"
+        />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorb"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/txtLowParibu"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:lines="2"
+            android:padding="5dp"
+            android:gravity="center"
+            android:text="En Düşük Fiyat"
+            android:layout_centerInParent="true"
+            android:textColor="@color/colorTextb"
+
+            />
+
+        <TextView
+            android:id="@+id/txtHighParibu"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:padding="5dp"
+            android:text="En Yüksek Fiyat"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/txtLowParibu"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorTextb"
+
+            />
+        <TextView
+            android:id="@+id/txtvolumeParibu"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:lines="2"
+            android:padding="5dp"
+            android:gravity="center"
+            android:layout_toRightOf="@id/txtLowParibu"
+            android:text="Hacim"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorTextb"
+
+            />
+    </RelativeLayout>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@color/colora"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/koineksimage"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/koineks" />
+
+        <TextView
+            android:id="@+id/koineks"
+            android:gravity="center"
+            android:layout_marginLeft="28dp"
+            android:layout_toRightOf="@id/koineksimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/colorTextColor"
+            android:textSize="25sp"
+            android:typeface="monospace"
+            />
+    </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/colorLinea" />
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colora"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/txtLowKoineks"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:lines="2"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="En Düşük Fiyat"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorTexta"
+
+                />
+
+            <TextView
+                android:id="@+id/txtHighKoineks"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:padding="5dp"
+                android:text="En Yüksek Fiyat"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/txtLowKoineks"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTexta"
+
+                />
+            <TextView
+                android:id="@+id/txtvolumeKoineks"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_toRightOf="@id/txtLowKoineks"
+                android:text="Hacim"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTexta"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:background="@color/colorb"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/btcimage"
+            android:layout_width="140dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/koinim" />
+
+        <TextView
+            android:id="@+id/koinim"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+          android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/btcimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:text=""
+            android:textStyle="bold"
+            android:textColor="@color/colorTextColor"
+            android:textSize="25sp"
+            android:typeface="monospace"
+            />
+    </RelativeLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.2dp"
+            android:background="@color/colorLineb" />
+        <RelativeLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorb"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/txtLowKoinim"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:lines="2"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="En Düşük Fiyat"
+                android:layout_centerInParent="true"
+                android:textColor="@color/colorTextb"
+
+                />
+
+            <TextView
+                android:id="@+id/txtHighKoinim"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:padding="5dp"
+                android:text="En Yüksek Fiyat"
+                android:gravity="center"
+                android:layout_toLeftOf="@id/txtLowKoinim"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextb"
+
+                />
+            <TextView
+                android:id="@+id/txtvolumeKoinim"
+                android:textSize="15sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:padding="5dp"
+                android:gravity="center"
+                android:layout_toRightOf="@id/txtLowKoinim"
+                android:text="Hacim"
+                android:layout_centerVertical="true"
+                android:textColor="@color/colorTextb"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_get_information"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:text="Fiyatları Güncelle"
+        android:background="@drawable/button_shape"
+        android:shadowColor="#263238"
+        android:shadowRadius="5"
+        android:textColor="@color/colorTextButton"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:typeface="monospace"
+
+        />
+
+
+</LinearLayout>
